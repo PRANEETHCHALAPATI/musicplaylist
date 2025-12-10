@@ -1,0 +1,153 @@
+/* MusicPlaylist.css - isolated styles for MusicPlaylist component */
+
+.mp-root {
+  max-width: 780px;
+  margin: 20px auto;
+  padding: 12px;
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial;
+}
+
+.edsheeran {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/music-playlist/music-playlist-Edsheeran-bg.png');
+  height: 350px;
+  background-size: cover;
+}
+
+/* Component heading - "Songs Playlist" */
+.mp-main-heading {
+  font-size: 28px;
+  margin: 8px 0 16px;
+  text-align: left;
+  color: #111;
+}
+
+/* Search */
+.mp-search-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.mp-search {
+  width: 220px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* No songs */
+.mp-no-songs-text {
+  padding: 36px 12px;
+  text-align: center;
+  font-weight: 600;
+  color: #666;
+}
+
+/* List */
+.mp-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Item */
+.mp-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  background: #fff;
+}
+
+/* Left block: image + meta */
+.mp-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mp-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.mp-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.mp-name {
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+  color: #111;
+}
+
+.mp-genre {
+  margin: 4px 0 0;
+  color: #777;
+  font-size: 13px;
+}
+
+/* Right block: duration + delete */
+.mp-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mp-duration {
+  margin: 0;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Delete button */
+.mp-delete {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  color: #444;
+}
+
+.mp-delete:hover {
+  background: #f8f8f8;
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 520px) {
+  .mp-root {
+    padding: 8px;
+  }
+  .mp-main-heading {
+    font-size: 20px;
+  }
+  .mp-image {
+    width: 52px;
+    height: 52px;
+  }
+  .mp-search-row {
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+}
